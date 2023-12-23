@@ -11,3 +11,4 @@ jobs:
       board: '["nice_nano"]'
       shield: '["corne_left","corne_right"]'
       branches: '["zmkfirmware/zmk/main caksoylar/zmk/feat/mouse-keys-3.2"]'
+      kconfig: '["CONFIG_ZMK_DISPLAY=y"]'
