@@ -1,0 +1,17 @@
+# Copyright 2022 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build my corne'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["corne_left","corne_right"]'
+      alphas: 'querty'
+      nav: 'vi'
+      custom_config: '[#define MIRYOKU_KLUDGE_THUMBCOMBOS\n#define MIRYOKU_KLUDGE_MOUSEKEYSPR\n#define MIRYOKU_KLUDGE_SUSPEND]'
+      kconfig: '["CONFIG_ZMK_DISPLAY=y"]'
+      branches: '["zmkfirmware/zmk/main caksoylar/zmk/feat/mouse-keys-3.2 manna-harbour/zmk/suspend-test"]'
