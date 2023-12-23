@@ -10,6 +10,4 @@ jobs:
     with:
       board: '["nice_nano"]'
       shield: '["corne_left","corne_right"]'
-      custom_config: '[#define MIRYOKU_ALPHAS_QWERTY\n#define MIRYOKU_NAV_VI\n#define MIRYOKU_KLUDGE_THUMBCOMBOS\n#define MIRYOKU_KLUDGE_MOUSEKEYSPR\n#define MIRYOKU_KLUDGE_SUSPEND]'
-      kconfig: '["CONFIG_ZMK_DISPLAY=y"]'
       branches: '["zmkfirmware/zmk/main caksoylar/zmk/feat/mouse-keys-3.2"]'
