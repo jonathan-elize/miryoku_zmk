@@ -12,4 +12,4 @@ jobs:
       shield: '["corne_left","corne_right"]'
       branches: '["zmkfirmware/zmk/main caksoylar/zmk/feat/mouse-keys-3.2"]'
       kconfig: '["CONFIG_ZMK_DISPLAY=y"]'
-      custom_config: '["#define MIRYOKU_ALPHAS_QWERTY","#define MIRYOKU_NAV_VI","#define MIRYOKU_KLUDGE_THUMBCOMBOS"]'
+      custom_config: '["#define MIRYOKU_ALPHAS_QWERTY","#define MIRYOKU_NAV_VI","#define MIRYOKU_KLUDGE_THUMBCOMBOS","#define MIRYOKU_KLUDGE_MOUSEKEYSPR","#define MIRYOKU_KLUDGE_SUSPEND"]'
